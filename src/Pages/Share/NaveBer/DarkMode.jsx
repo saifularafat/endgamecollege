@@ -21,7 +21,7 @@ const DarkLight = () => {
     }
 
     return (
-        <div className="md:pr-3 pr-24">
+        <div className="md:pr-3">
             <label className="swap swap-rotate md:mt-3 text-color-btn">
                 <input
                     type="checkbox"

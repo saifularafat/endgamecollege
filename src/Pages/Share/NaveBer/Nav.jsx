@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../components/useAuth";
-import Profile from "./Profile";
 import Swal from "sweetalert2";
+import DarkLight from "./DarkMode";
 
 const Nav = () => {
     const { user, logOut } = useAuth();
@@ -68,7 +68,7 @@ const Nav = () => {
                                 className='bg-black text-main_color py-[6px] px-4 text-lg font-sans font-semibold uppercase rounded-lg tracking-wide hover:opacity-70'>
                                 Login
                             </NavLink>
-                                <Profile />
+                                <DarkLight />
                         </div>
                 }
             </ul>
