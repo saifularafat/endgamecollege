@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { handleShowConfirmPass, handleShowPass } from "../../api/ShowPassword";
 import useAuth from "../../components/useAuth";
 import Swal from "sweetalert2";
-import { PulseLoader } from "react-spinners";
+import { HashLoader } from "react-spinners";
 // import axios from "axios";
 import { Helmet } from "react-helmet-async";
 
@@ -100,13 +100,13 @@ const Register = () => {
     }
     return (
         <>
-            <Helmet><title>SK Academy | SignUp</title></Helmet>
-            <div className="hero bg-slate-400 bg-signUpImage min-h-screen">
-                <div className='flex justify-center items-center min-h-screen  pt-5'>
-                    <div className='flex flex-col max-w-md p-6  sm:p-10 shadow-2xl rounded-t-[120px]'>
+            <Helmet><title>Education Master || Register</title></Helmet>
+            <div className="hero bg-green-700 w-full min-h-screen">
+                <div className='bg-green-700 flex justify-center items-center min-h-screen  pt-5'>
+                    <div className='bg-green-700 flex flex-col max-w-md p-6  sm:p-10 shadow-2xl'>
                         <div className='mb-8 text-center border-b-2 border-rose-900'>
-                            <h1 className='my-3 text-4xl text-black font-bold'>Sign Up</h1>
-                            <p className='text-base text-second-title mb-4'>Welcome to Sports kings Academy</p>
+                            <h1 className='my-3 text-4xl text-slate-800 font-bold font-Lobster'>Register</h1>
+                            <p className='text-base text-slate-800 mb-4'>Welcome to Sports kings Academy</p>
                         </div>
                         <form
                             onSubmit={handleSubmit(FormSubmit)}
@@ -281,15 +281,16 @@ const Register = () => {
                             <div>
                                 <button
                                     type='submit'
-                                    className='bg-main_color w-full text-xl font-semibold font-mono uppercase tracking-wider rounded-md py-3 text-white hover:bg-transparent hover:text-main_color border-2 hover:border-main_color border-main_color transition duration-200'
+                                    className='bg-green-900 w-full text-xl font-semibold font-mono uppercase tracking-wider rounded-md py-3 text-white hover:bg-transparent hover:text-main_color border-2 hover:border-white border-green-900 transition duration-200'
                                 >
                                     {
-                                        loading ? <PulseLoader className="mx-auto 
+                                        loading ? <HashLoader 
+                                        className="mx-auto 
                                     animate-pulse"
-                                            color="#FF3811"
-                                            size={18} />
+                                            color="#fff"
+                                            size={26} />
                                             :
-                                            'Sign Up'
+                                            'Register'
                                     }
 
                                 </button>
@@ -309,7 +310,7 @@ const Register = () => {
                             Already have an account?{' '}
                             <Link
                                 to='/login'
-                                className='hover:underline hover:text-color-btn text-teal-900 font-medium'
+                                className='hover:underline hover:text-white text-teal-900 font-medium'
                             >
                                 Login
                             </Link>

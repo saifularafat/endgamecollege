@@ -51,10 +51,9 @@ const Login = () => {
 
     }
 
-
     return (
         <div className='bg-green-400'>
-            <div className="lg:flex justify-center items-center h-screen">
+            <div className="lg:flex justify-center items-center">
                 <Helmet>
                     <title>Education Master || LogIn</title>
                 </Helmet>
