@@ -9,6 +9,7 @@ const NavBer = () => {
             <Container>
                 <div className="flex flex-row items-center justify-between">
                     <Logo />
+                    screech
                     <Nav />
 
                     {/* Mobile Menu */}

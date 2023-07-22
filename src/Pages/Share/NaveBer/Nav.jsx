@@ -24,38 +24,31 @@ const Nav = () => {
                     <NavLink to='/'
                         className={({ isActive }) => (isActive ? 'active' : 'default')}
                     >
-                        Home
+                        Home 
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/trainers'
+                    <NavLink to='/colleges'
                         className={({ isActive }) => (isActive ? 'active' : 'default')}
                     >
-                        TRAINERS
+                        Colleges
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/classes'
+                    <NavLink to='/admission'
                         className={({ isActive }) => (isActive ? 'active' : 'default')}
                     >
-                        Classes
+                        Admission
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/blog'
+                    <NavLink to='/myCollege'
                         className={({ isActive }) => (isActive ? 'active' : 'default')}
                     >
-                        Blog
+                        My College
                     </NavLink>
                 </li>
-                <li className="">
-                    <NavLink to='/dashboard'
-                        className={({ isActive }) => (isActive ? 'active' : 'default')}
-                    >
-                        Dashboard
-                    </NavLink>
-                </li>
-                <Profile />
+               
                 {
                     user ?
                         <span className="flex items-center gap-x-4 ml-12 ">
@@ -72,7 +65,7 @@ const Nav = () => {
                         <div className='flex items-center gap-x-4'>
                             <NavLink
                                 to='login'
-                                className='bg-white text-main_color py-[6px] px-4 text-lg font-sans font-semibold uppercase rounded-lg tracking-wide hover:opacity-70'>
+                                className='bg-black text-main_color py-[6px] px-4 text-lg font-sans font-semibold uppercase rounded-lg tracking-wide hover:opacity-70'>
                                 Login
                             </NavLink>
                                 <Profile />
