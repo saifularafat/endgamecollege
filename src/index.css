@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .active {
-    @apply bg-gradient-to-r from-orange-500 to-orange-300 py-3 px-4 text-xl font-open font-semibold text-white rounded-lg tracking-wide transition duration-200
+    @apply border-b-2 border-color-btn p-3 text-xl font-open font-semibold text-color-btn rounded-lg tracking-wide transition duration-200 shadow-2xl
 }
 
 .default {
-    @apply bg-transparent text-xl text-title-color font-open font-semibold tracking-wide py-3 px-4 rounded-lg
+    @apply bg-transparent text-xl text-title-color font-open font-semibold tracking-wide p-3 rounded-lg
 }
 
 /* SignUp & SignIn style */

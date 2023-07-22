@@ -22,7 +22,7 @@ const DarkLight = () => {
 
     return (
         <div className="md:pr-3">
-            <label className="swap swap-rotate md:mt-3 text-color-btn">
+            <label className="swap swap-rotate md:mt-3 text-title-color">
                 <input
                     type="checkbox"
                     onChange={handlerToggle}

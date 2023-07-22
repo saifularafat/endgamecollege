@@ -48,6 +48,13 @@ const Nav = () => {
                         My College
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink to='/profile'
+                        className={({ isActive }) => (isActive ? 'active' : 'default')}
+                    >
+                        Profile
+                    </NavLink>
+                </li>
                
                 {
                     user ?
@@ -65,7 +72,7 @@ const Nav = () => {
                         <div className='flex items-center gap-x-4'>
                             <NavLink
                                 to='login'
-                                className='bg-black text-main_color py-[6px] px-4 text-lg font-sans font-semibold uppercase rounded-lg tracking-wide hover:opacity-70'>
+                                className='bg-black text-main_color py-[6px] px-4 ml-5 text-lg font-sans font-semibold uppercase rounded-lg tracking-wide hover:opacity-70'>
                                 Login
                             </NavLink>
                                 <DarkLight />

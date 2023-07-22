@@ -9,6 +9,7 @@ import SignIn from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
 import Terms from "../Pages/Terms/Terms";
+import Profile from "../Pages/Profile/Profile";
 
 const router = createBrowserRouter([
     {
@@ -19,7 +20,8 @@ const router = createBrowserRouter([
             { path: '/', element: <Home /> },
             { path: 'colleges', element: <Colleges /> },
             { path: 'admission', element: <Admissions /> },
-            { path: 'myCollege', element: <MyCollege /> }
+            { path: 'myCollege', element: <MyCollege /> },
+            { path: 'profile', element: <Profile /> },
         ]
     },
     { path: 'login', element: <Login /> },
