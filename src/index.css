@@ -3,28 +3,59 @@
 @tailwind utilities;
 
 .active {
-    @apply border-b-2 border-color-btn p-3 text-xl font-open font-semibold text-color-btn rounded-lg tracking-wide transition duration-200 shadow-2xl
+    @apply border-b-2 border-color-btn p-3 text-xl font-open 
+    font-semibold text-color-btn rounded-lg tracking-wide 
+    transition duration-200 shadow-2xl
 }
 
 .default {
-    @apply bg-transparent text-xl text-title-color font-open font-semibold tracking-wide p-3 rounded-lg
+    @apply bg-transparent text-xl text-title-color 
+    font-open font-semibold tracking-wide p-3 rounded-lg
+}
+
+/* Banner section */
+.banner {
+    @apply text-6xl font-semibold md:w-96 hidden md:block
+}
+.banner_btn{
+    @apply md:text-xl text-lg font-Lobster font-semibold 
+    tracking-wider bg-color-btn md:py-3 sm:py-2 py-1 md:px-5 sm:px-3 px-2 
+    border-y-2 border-color-btn rounded-xl 
+    hover:bg-transparent hover:text-color-btn transition 
+    duration-200
+}
+.banner_btn_white{
+    @apply md:text-xl text-lg text-slate-900 font-Lobster font-semibold 
+    tracking-wider bg-white  md:py-3 sm:py-2 py-1 md:px-5 sm:px-3 px-2
+    border-y-2 border-white rounded-xl 
+    hover:bg-transparent hover:text-white transition 
+    duration-200
 }
 
 /* SignUp & SignIn style */
 .form_label {
-    @apply text-title-color mb-2 md:text-2xl text-xl font-serif font-medium
+    @apply text-title-color mb-2 md:text-2xl text-xl 
+    font-serif font-medium
 }
 
 .input_style {
-    @apply w-full text-xl px-3 py-3 border rounded-md border-gray-300 focus:outline-none bg-gray-200 text-gray-800
+    @apply w-full text-xl px-3 py-3 border rounded-md 
+    border-gray-300 focus:outline-none bg-gray-200
+    text-gray-800
 }
+
+
 
 /* Social component */
 .social_style {
-    @apply flex justify-center items-center space-x-2 border m-3 p-2 border-green-900 hover:bg-green-950 rounded-md transition duration-200 hover:text-white text-base cursor-pointer
+    @apply flex justify-center items-center space-x-2 border m-3 p-2 
+    border-green-900 hover:bg-green-950 rounded-md 
+    transition duration-200 hover:text-white text-base cursor-pointer
 }
 
 /* terms And Condition */
 .terms_btn {
-    @apply py-3 px-6 text-2xl font-serif font-semibold border rounded-xl bg-gradient-to-r from-green-600 to-green-900 text-white hover:border-green-700 hover:text-white animate-bounce hover:animate-none tracking-wider transition duration-200
+    @apply py-3 px-6 text-2xl font-serif font-semibold border rounded-xl 
+    bg-gradient-to-r from-green-600 to-green-900 text-white hover:border-green-700 hover:text-white 
+    animate-bounce hover:animate-none tracking-wider transition duration-200
 }
