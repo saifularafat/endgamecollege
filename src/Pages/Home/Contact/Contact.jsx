@@ -15,9 +15,16 @@ const Contact = () => {
                     <h2 className="text-xl text-slate-800 font-open font-semibold pt-2 tracking-wider uppercase">Sen Watson</h2>
                     <p className="text-lg text-slate-600 leading-3">Senior Register</p>
                 </div>
-                <p className="text-xl font-open font-medium hover:opacity-75 pt-2">Phone:<span className=""> +880-000-00-000-00</span></p>
-                <p className="text-xl font-open font-medium hover:opacity-75 leading-5">Email:<span className="lowercase"> EDUCATIONMASTER@Gmail.com</span></p>
-                <p className="text-xl font-open font-medium hover:opacity-75 leading-7">Address:<span className=""> Mirpur, Dhaka-1200, Bangladesh</span></p>
+                <div className="hidden sm:block pt-2">
+                    <p className="text-xl font-open font-semibold hover:opacity-75">Phone:<span className=" font-medium"> +880-000-00-000-00</span></p>
+                    <p className="text-xl font-open font-semibold hover:opacity-75 leading-5">Email:<span className="lowercase font-medium"> EDUCATIONMASTER@Gmail.com</span></p>
+                    <p className="text-xl font-open font-semibold hover:opacity-75 leading-7">Address:<span className=" font-medium"> Mirpur, Dhaka-1200, Bangladesh</span></p>
+                </div>
+                <div className="sm:hidden block pt-4 space-y-2">
+                    <p className="text-xl font-open font-semibold hover:opacity-75">Phone: <br /><span className=" font-medium"> +880-000-00-000-00</span></p>
+                    <p className="text-xl font-open font-semibold hover:opacity-75 leading-5">Email: <br /><span className="lowercase font-medium"> EDUCATIONMASTER@Gmail.com</span></p>
+                    <p className="text-xl font-open font-semibold hover:opacity-75 leading-7">Address: <br /><span className=" font-medium"> Mirpur, Dhaka-1200, Bangladesh</span></p>
+                </div>
             </div>
         </Container>
     );
