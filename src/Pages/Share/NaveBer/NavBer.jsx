@@ -5,6 +5,7 @@ import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import { useState } from "react";
 import useAuth from "../../../components/useAuth";
 import DarkLight from './DarkMode';
+import { Link } from 'react-router-dom';
 
 const NavBer = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -27,7 +28,7 @@ const NavBer = () => {
                         {
                             isMenuOpen && (
                                 <div className='absolute top-0 left-0 w-full z-10'>
-                                    <div className='flex justify-between items-center px-2 py-2 bg-main_color shadow-lg'>
+                                    <div className='flex justify-between items-center bg-[#05494e] px-2 py-2 bg-main_color shadow-lg'>
                                         {/* logo and close ber section */}
                                         <div className="">
                                             <DarkLight />
@@ -46,52 +47,52 @@ const NavBer = () => {
                                     <nav>
                                         <ul
                                             className='space-y-3 py-6
-                                         bg-green-600
-                                         text-white w-full'>
+                                         bg-sec-btn
+                                         text-white w-full mx-auto text-center'>
                                             <li className='p-2
-                                            hover:bg-orange-400 
+                                            hover:bg-color-btn 
                                             '>
                                                 <Link to='/' className='default hover:text-white'>
                                                     Home
                                                 </Link>
                                             </li>
                                             <li className='p-2
-                                            hover:bg-orange-400'>
-                                                <Link to='/trainers' className='default hover:text-white'>
-                                                    Trainers
+                                            hover:bg-color-btn'>
+                                                <Link to='/colleges' className='default hover:text-white'>
+                                                Colleges
                                                 </Link>
                                             </li>
                                             <li className='p-2
-                                            hover:bg-orange-400'>
-                                                <Link to='/classes' className='default hover:text-white'>
-                                                    Classes
+                                            hover:bg-color-btn'>
+                                                <Link to='/admission' className='default hover:text-white'>
+                                                Admission
                                                 </Link>
                                             </li>
 
                                             <li className='p-2
-                                            hover:bg-orange-400'>
-                                                <Link to='blog' className='default hover:text-white'>
-                                                    Blog
+                                            hover:bg-color-btn'>
+                                                <Link to='/myCollege' className='default hover:text-white'>
+                                                My College
                                                 </Link>
                                             </li>
                                             <li className='p-2
-                                            hover:bg-orange-400'>
-                                                <Link to='/dashboard'
+                                            hover:bg-color-btn'>
+                                                <Link to='/profile'
                                                     className='default hover:text-white'>
-                                                    Dashboard
+                                                    Profile
                                                 </Link>
                                             </li>
                                             {
                                                 user ?
                                                     <li className='p-2
-                                            hover:bg-orange-400'>
+                                            hover:bg-color-btn'>
                                                         <Link to='' className='default hover:text-white'>
                                                             LogOut
                                                         </Link>
                                                     </li>
                                                     :
                                                     <li className='p-2
-                                            hover:bg-orange-400'>
+                                            hover:bg-color-btn'>
                                                         <Link to='login' className='default hover:text-white'>
                                                             Login
                                                         </Link>

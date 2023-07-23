@@ -10,6 +10,7 @@ import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
 import Terms from "../Pages/Terms/Terms";
 import Profile from "../Pages/Profile/Profile";
+import Details from "../Pages/Details/Details";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
             { path: 'admission', element: <Admissions /> },
             { path: 'myCollege', element: <MyCollege /> },
             { path: 'profile', element: <Profile /> },
+            { path: 'details/:id', element: <Details /> },
         ]
     },
     { path: 'login', element: <Login /> },

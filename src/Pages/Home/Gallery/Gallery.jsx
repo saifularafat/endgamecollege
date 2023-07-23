@@ -8,7 +8,6 @@ import imgFour from '../../../assets/graduate-img/graduate-6.jpeg'
 import imgFive from '../../../assets/graduate-img/graduate-4.jpeg'
 import imgSix from '../../../assets/graduate-img/graduate-5.jpeg'
 const Gallery = () => {
-    console.log(imgOne);
     return (
         <div className="md:pt-16 sm:pt-14 pt-10 pb-6">
             <SectionTitle title='Gallery' />

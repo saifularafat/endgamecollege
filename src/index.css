@@ -32,6 +32,14 @@
     duration-200
 }
 
+/* colleges btn style */
+.details_btn{
+    @apply text-xl text-white font-open md:py-2 py-1 md:px-5 px-4 
+    border-y-2 border-color-btn bg-color-btn 
+    hover:bg-slate-100 hover:text-color-btn transition 
+    duration-200 tracking-wider rounded-lg
+}
+
 /* SignUp & SignIn style */
 .form_label {
     @apply text-title-color mb-2 md:text-2xl text-xl 
