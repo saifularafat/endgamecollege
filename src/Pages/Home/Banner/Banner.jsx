@@ -52,11 +52,10 @@ const Banner = () => {
                     <Paragraph
                         title='EDUCATION '
                         colorTitle='MASTER'
-                        subTitle='There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form'
                         label='Admission'
-                        adders='/admission'
+                        addressPath='/'
                         labelOne='College'
-                        addressOne='/colleges'
+                        addressOne='/'
                     />
                 </div>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
