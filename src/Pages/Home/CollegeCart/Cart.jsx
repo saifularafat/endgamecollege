@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Cart = ({ colleges }) => {
-    console.log(colleges);
-    return (
+        return (
         <div className="card sm:w-96 bg-base-100 shadow-xl mb-8">
             <img src={colleges?.Image} alt="college" className="rounded-md h-[310px]" />
             <div className="card-body">

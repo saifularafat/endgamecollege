@@ -49,6 +49,7 @@ const AdmissionForm = () => {
                     university: data.university,
                     subject: data.subject,
                     image: imageAdders,
+                    rating: '4.8'
                 })
                     .then(data => {
                         console.log(data);

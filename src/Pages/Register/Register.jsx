@@ -28,12 +28,9 @@ const Register = () => {
 
     const password = watch("password", "");
     const FormSubmit = (data) => {
-        console.log(data);
-
         const imageUrl = data.image[0];
         const formData = new FormData();
         formData.append('image', imageUrl)
-        console.log(formData);
         const url = `https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_IMG_UPLOAD_KEY}`;
 
         fetch(url, {
@@ -42,7 +39,6 @@ const Register = () => {
         })
             .then(res => res.json())
             .then(imageData => {
-                console.log(imageData);
                 const imageAdders = imageData.data.url;
                 createUser(data.email, data.password)
                     .then(result => {
@@ -53,6 +49,8 @@ const Register = () => {
                                     name: data.name,
                                     email: data.email,
                                     image: imageAdders,
+                                    address: '',
+                                    university:''
                                 })
                                     .then(data => {
                                         if (data.insertedId) {
