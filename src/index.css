@@ -78,3 +78,11 @@
 .admission_fontSize{
     @apply md:w-7 md:h-7 sm:w-5 sm:h-5 w-6 h-6
 }
+
+/* admission Form style */
+.admissionForm_btn{
+    @apply bg-green-900 w-full text-xl font-semibold font-mono uppercase 
+    tracking-wider rounded-md py-3 text-white hover:bg-color-btn 
+    hover:text-white border-2 hover:border-color-btn 
+    border-green-900 transition duration-200
+}
