@@ -15,7 +15,7 @@ const SportsCategory = ({ sports }) => {
                         <div
                             key={index}
                         >
-                            <div className="space-y-1">
+                            <div className="space-y-1 md:pb-6 pb-3">
                                 <img src={sport?.sport_img} alt="" className="md:w-[380px] sm:w-[320px] w-full md:h-[280px] sm:h-[220px] " />
                                 <h2 className="pt-2 text-2xl font-open font-semibold"><span className="">Sport Name:</span> <span className="text-color-btn">{sport?.sport_name}</span></h2>
                                 <p className="text-lg font-medium font-open"><span>Sport Date: </span>{sport?.date}</p>

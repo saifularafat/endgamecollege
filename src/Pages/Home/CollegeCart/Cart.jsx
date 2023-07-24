@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Cart = ({ colleges }) => {
     console.log(colleges);
     return (
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card sm:w-96 bg-base-100 shadow-xl mb-8">
             <img src={colleges?.Image} alt="college" className="rounded-md h-[310px]" />
             <div className="card-body">
                 <h2 className="md:text-xl text-lg md:font-bold sm:font-medium ">{colleges?.college_name}</h2>

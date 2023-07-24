@@ -20,7 +20,7 @@ const Details = () => {
                                 className="md:flex items-center justify-center gap-5"
                             >
                                 <div className="md:w-1/2 sm:w-full">
-                                    <img src={college?.Image} alt="" />
+                                    <img src={college?.Image} alt="" className="h-[530px] w-full"/>
                                 </div>
                                 <div className="md:w-1/2 sm:w-full md:space-y-3">
                                     <h2 className="md:text-2xl lg:text-3xl sm:text-xl font-open font-semibold text-orange-500"><span className="text-title-color">College Name: </span>{college?.college_name}</h2>
