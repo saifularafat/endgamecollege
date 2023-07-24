@@ -67,3 +67,14 @@
     bg-gradient-to-r from-green-600 to-green-900 text-white hover:border-green-700 hover:text-white 
     animate-bounce hover:animate-none tracking-wider transition duration-200
 }
+
+/* details style */
+.admission_title{
+    @apply text-2xl sm:text-xl font-open font-semibold border-b-2 mb-5 tracking-wider
+}
+.admission_desc{
+    @apply md:text-xl sm:text-base text-lg font-medium text-center
+}
+.admission_fontSize{
+    @apply md:w-7 md:h-7 sm:w-5 sm:h-5 w-6 h-6
+}
