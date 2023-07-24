@@ -163,24 +163,49 @@ const AdmissionForm = () => {
                         </div>
                     </div>
                     <div className="">
+                        <label
+                            htmlFor='name'
+                            className='form_label'>
+                            Image*
+                        </label>
+                        <input
+                            type='file'
+                            name='file'
+                            id='file'
+                            placeholder='Enter Your Image'
+                            className='input_style'
+                            data-temp-mail-org='0'
+                            {...register("file", { required: true })}
+                        />
+                        {errors.name?.type === "required" && (
+                            <p className="text-red-600">Image is required</p>
+                        )}
+                    </div>
+                    <div className="hidden">
+                       {
+                        filterCollege.map(college => <div
+                        key={college?.id}>
                             <label
                                 htmlFor='name'
                                 className='form_label'>
-                                Image*
+                                university*
                             </label>
                             <input
-                                type='file'
-                                name='file'
-                                id='file'
-                                placeholder='Enter Your Image'
+                                type='text'
+                                name='university'
+                                id='university'
+                                defaultValue={college?.college_name}
+                                placeholder='Enter Your university'
                                 className='input_style'
                                 data-temp-mail-org='0'
-                                {...register("file", { required: true })}
+                                {...register("university", { required: true })}
                             />
                             {errors.name?.type === "required" && (
-                                <p className="text-red-600">Image is required</p>
+                                <p className="text-red-600">university is required</p>
                             )}
-                        </div>
+                        </div>)
+                       }
+                    </div>
                     <div>
                         <button
                             type='submit'
@@ -199,8 +224,6 @@ const AdmissionForm = () => {
                         </button>
                     </div>
                 </form>
-
-
             </Container>
         </div>
     );

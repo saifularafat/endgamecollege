@@ -2,7 +2,7 @@ import { FaFacebookF, FaGoogle } from "react-icons/fa";
 import useAuth from "../../../components/useAuth";
 import { useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-// import axios from "axios";
+import axios from "axios";
 
 const SocialSignIn = () => {
     const navigate = useNavigate();

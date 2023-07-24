@@ -6,8 +6,8 @@ import { handleShowConfirmPass, handleShowPass } from "../../api/ShowPassword";
 import useAuth from "../../components/useAuth";
 import Swal from "sweetalert2";
 import { HashLoader } from "react-spinners";
-// import axios from "axios";
 import { Helmet } from "react-helmet-async";
+import axios from "axios";
 
 const Register = () => {
     const navigate = useNavigate();

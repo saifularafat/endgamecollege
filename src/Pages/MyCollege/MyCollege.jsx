@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 import Container from "../../components/Container";
 
 const MyCollege = () => {
     return (
-        <div>
+        <div className=" md:py-16 sm:py-10 py-8">
+            <Helmet>
+                <title>Education Master || My College</title>
+            </Helmet>
             <Container>
                 <div className="overflow-x-auto">
                     <table className="table table-zebra">

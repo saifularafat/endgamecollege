@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import useAuth from "../../../components/useAuth";
 import Swal from "sweetalert2";
 import DarkLight from "./DarkMode";
+// import Profile from "../../Profile/Profile";
 
 const Nav = () => {
     const { user, logOut } = useAuth();
@@ -60,19 +61,19 @@ const Nav = () => {
                     user ?
                         <span className="flex items-center gap-x-4 ml-12 ">
                             <button
-                                className='bg-white text-main_color py-[6px] px-4 text-lg font-sans font-semibold uppercase rounded-lg tracking-wide hover:opacity-70'
+                                className='bg-color-btn text-white py-[8px] px-4 text-lg font-sans font-semibold uppercase rounded-lg tracking-wide hover:opacity-70'
                                 onClick={handlerLogOut}>
                                 Log Out
                             </button>
                             <span className=' '>
-                                    <Profile />
+                                <DarkLight />
                             </span>
                         </span>
                         :
                         <div className='flex items-center gap-x-4'>
                             <NavLink
                                 to='login'
-                                className='bg-black text-main_color py-[6px] px-4 ml-5 text-lg font-sans font-semibold uppercase rounded-lg tracking-wide hover:opacity-70'>
+                                className='bg-black text-main_color py-[8px] px-4 ml-5 text-lg font-sans font-semibold uppercase rounded-lg tracking-wide hover:opacity-70'>
                                 Login
                             </NavLink>
                                 <DarkLight />
