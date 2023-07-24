@@ -6,7 +6,7 @@ import { CollegesCart } from "../../api/useColleges";
 const MyCollege = () => {
     const [admission] = AdmissionData();
     const [colleges] = CollegesCart();
-    
+
     console.log(admission);
 
     return (
@@ -29,16 +29,12 @@ const MyCollege = () => {
                                 admission.map(admissionCart => <tr
                                 key={admissionCart?._id}>
                                     <td>{admissionCart?.university}</td>
+                                    <td>{admissionCart?.rating}</td>
                                     <td>{admissionCart?.university}</td>
-                                    <td>{admissionCart?.university}</td>
-                                    <td>{admissionCart?.university}</td>
+                                    <td>{admissionCart?.number}</td>
+                                    <td>Admission College</td>
                                 </tr>)
                             }
-                            <tr>
-                                <td>Cy Ganderton</td>
-                                <td>Quality Control Specialist</td>
-                                <td>Blue</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
