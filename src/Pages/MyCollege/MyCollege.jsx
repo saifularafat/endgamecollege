@@ -21,8 +21,8 @@ const MyCollege = () => {
                         <tr>
                             <th className="text-lg">College Name</th>
                             <th className="text-lg">Rating</th>
-                            <th className="text-lg">Serial Number</th>
-                            <th className="text-lg">Colleges</th>
+                            <th className="text-lg">Subject</th>
+                            <th className="text-lg">Review</th>
                         </tr>
                         <tbody>
                             {
@@ -30,9 +30,8 @@ const MyCollege = () => {
                                 key={admissionCart?._id}>
                                     <td>{admissionCart?.university}</td>
                                     <td>{admissionCart?.rating}</td>
-                                    <td>{admissionCart?.university}</td>
-                                    <td>{admissionCart?.number}</td>
-                                    <td>Admission College</td>
+                                    <td>{admissionCart?.subject}</td>
+                                    <td>Review</td>
                                 </tr>)
                             }
                         </tbody>
