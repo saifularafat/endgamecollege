@@ -16,8 +16,8 @@ const Banner = () => {
                         subTitle='There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form'
                         label='Admission'
                         adders='/admission'
-                        labelOne='College'
-                        addressOne='/colleges'
+                        labelOne='Register'
+                        addressOne='/register'
                     />
 
                 </div>
@@ -36,8 +36,8 @@ const Banner = () => {
                         subTitle='There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form'
                         label='Admission'
                         adders='/admission'
-                        labelOne='College'
-                        addressOne='/colleges'
+                        labelOne='Register'
+                        addressOne='/register'
                     />
                 </div>
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -54,7 +54,7 @@ const Banner = () => {
                         colorTitle='MASTER'
                         label='Admission'
                         addressPath='/'
-                        labelOne='College'
+                        labelOne='Register'
                         addressOne='/'
                     />
                 </div>

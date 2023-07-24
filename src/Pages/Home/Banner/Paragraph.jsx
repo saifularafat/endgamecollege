@@ -10,7 +10,7 @@ const Paragraph = ({ title, colorTitle, subTitle, label, addressPath, labelOne, 
                 <Link to='/admission' className='banner_btn'>
                     {label}
                 </Link>
-                <Link to='/colleges' className='banner_btn_white'>
+                <Link to='/register' className='banner_btn_white'>
                     {labelOne}
                 </Link>
             </div>
