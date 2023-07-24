@@ -1,4 +1,5 @@
-import { FaFacebookF, FaGoogle } from "react-icons/fa";
+import {  FaGoogle } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
 import useAuth from "../../../components/useAuth";
 import { useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -86,7 +87,7 @@ const SocialSignIn = () => {
             <div
                 onClick={handlerGitHubLogin}
                 className='social_style'>
-                <FaFacebookF size={28} />
+                <BsGithub size={28} />
             </div>
         </div>
     );
