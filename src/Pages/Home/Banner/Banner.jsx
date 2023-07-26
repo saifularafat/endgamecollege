@@ -52,6 +52,7 @@ const Banner = () => {
                     <Paragraph
                         title='EDUCATION '
                         colorTitle='MASTER'
+                        subTitle='There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form'
                         label='Admission'
                         addressPath='/'
                         labelOne='Register'

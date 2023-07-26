@@ -6,7 +6,7 @@ import Cart from "./Cart";
 const CollegeCart = () => {
     const [allColleges] = CollegesCart();
     return (
-        <div className="md:py-20 sm:py-14 py-10 ">
+        <div className="md:py-20 sm:py-14 py-10 bg-slate-100">
             <SectionTitle 
             title='Colleges'
             />

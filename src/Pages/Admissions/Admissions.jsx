@@ -16,7 +16,7 @@ const Admissions = () => {
                     <table className="table table-zebra">
                         {/* head */}
                         <thead>
-                            <tr>
+                            <tr className="bg-slate-400 text-slate-800">
                                 <th className="text-lg">College Name</th>
                                 <th className="text-lg">Rating</th>
                                 <th className="text-lg">Serial Number</th>

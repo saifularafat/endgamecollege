@@ -2,9 +2,9 @@ import Container from "../../../components/Container";
 import logo from '../../../assets/Edu-logo.png'
 const Footer = () => {
     return (
-        <div className="bg-base-200">
+        <div className="bg-base-300">
             <Container>
-                <footer className="footer mx-auto p-10 bg-base-200 text-base-content">
+                <footer className="footer mx-auto p-10 bg-base-300 text-base-content">
                     <div className="">
                         <img src={logo} alt="" className="w-24 mx-auto" />
                         <h2 className="text-2xl font-semibold">Education Master</h2>
