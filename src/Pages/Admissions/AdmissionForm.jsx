@@ -100,7 +100,7 @@ const AdmissionForm = () => {
                     className="md:pt-10 pt-8 md:space-y-5 space-y-2"
                 >
                     <div className='sm:flex items-center gap-4'>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <label
                                 htmlFor='name'
                                 className='form_label'>
@@ -120,7 +120,7 @@ const AdmissionForm = () => {
                                 <p className="text-red-600">Name is required</p>
                             )}
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <label
                                 htmlFor='name'
                                 className='form_label'>
@@ -142,7 +142,7 @@ const AdmissionForm = () => {
                         </div>
                     </div>
                     <div className='sm:flex items-center gap-4'>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <label
                                 htmlFor='name'
                                 className='form_label'>
@@ -161,7 +161,7 @@ const AdmissionForm = () => {
                                 <p className="text-red-600">Number is required</p>
                             )}
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <label
                                 htmlFor='name'
                                 className='form_label'>
@@ -182,7 +182,7 @@ const AdmissionForm = () => {
                         </div>
                     </div>
                     <div className='sm:flex items-center gap-4'>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <label
                                 htmlFor='name'
                                 className='form_label'>
@@ -201,7 +201,7 @@ const AdmissionForm = () => {
                                 <p className="text-red-600">Date of Birth is required</p>
                             )}
                         </div>
-                        <div className="w-1/2">
+                        <div className="md:w-1/2">
                             <label
                                 htmlFor='name'
                                 className='form_label'>

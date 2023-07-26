@@ -62,7 +62,9 @@ const Profile = () => {
             </Helmet>
             <Container>
                 <div>
-                    <img src={user?.photoURL} alt="profile" className="w-32 h-32 mx-auto border-2 border-color-btn rounded-full" />
+                    <img src={user?.photoURL} alt="profile" 
+                    title={user?.displayName}
+                    className="w-32 h-32 mx-auto border-2 border-color-btn rounded-full" />
                 </div>
                 <div className="flex items-center justify-center pt-6 gap-5">
                     <Link to='/'>

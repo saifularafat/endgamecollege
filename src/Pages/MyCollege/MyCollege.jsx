@@ -1,11 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import Container from "../../components/Container";
 import { AdmissionData } from "../../api/useAdmissionData";
-import { CollegesCart } from "../../api/useColleges";
 
 const MyCollege = () => {
     const [admission] = AdmissionData();
-    const [colleges] = CollegesCart();
 
     console.log(admission);
 
@@ -17,8 +15,7 @@ const MyCollege = () => {
             <Container>
                 <div className="overflow-x-auto">
                     <table className="table table-zebra">
-                        {/* head */}
-                        <tr>
+                        <tr className="bg-slate-400">
                             <th className="text-lg">College Name</th>
                             <th className="text-lg">Rating</th>
                             <th className="text-lg">Subject</th>

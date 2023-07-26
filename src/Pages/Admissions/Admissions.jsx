@@ -14,7 +14,6 @@ const Admissions = () => {
             <Container>
                 <div className="overflow-x-auto">
                     <table className="table table-zebra">
-                        {/* head */}
                         <thead>
                             <tr className="bg-slate-400 text-slate-800">
                                 <th className="text-lg">College Name</th>

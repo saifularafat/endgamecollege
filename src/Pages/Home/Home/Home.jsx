@@ -1,4 +1,3 @@
-import Container from "../../../components/Container";
 import Search from "../../Share/NaveBer/Search";
 import About from "../About/About";
 import Banner from "../Banner/Banner";

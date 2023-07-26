@@ -8,8 +8,8 @@ const AboutCart = ({ aboutData }) => {
                 <h2 className="md:text-2xl text-lg md:font-bold sm:font-medium ">{aboutData?.name}</h2>
                 <p className="text-justify text-sm">{aboutData?.details}</p>
                 <div className="flex items-center gap-3">
-                    <p className=""><span className="text-xl font-medium">Number: </span> <span className="text-2xl text-orange-600 font-bold">{aboutData?.number}</span></p>
-                    <p className=""><span className="text-xl font-medium">Sit: </span> <span className="text-2xl text-green-700 font-bold">{aboutData?.sit}</span></p>
+                    <p className=""><span className="text-xl font-medium">{aboutData?.category}: </span> <span className="text-2xl text-orange-600 font-bold">{aboutData?.number}</span></p>
+                    <p className=""><span className="text-xl font-medium">{aboutData?.seat}: </span> <span className="text-2xl text-green-700 font-bold">{aboutData?.sit}</span></p>
                 </div>
             </div>
         </div>
